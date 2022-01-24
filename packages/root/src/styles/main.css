@@ -1,0 +1,37 @@
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+.main { 
+    width: 80%; 
+    margin: 1rem auto;
+}
+
+.navigation { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 2rem 1rem;
+    background: lightBlue;
+}
+
+.navigation .logo {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.navList {
+    display: flex;
+}
+
+.navList li {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.navList li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
