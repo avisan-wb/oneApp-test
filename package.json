@@ -7,6 +7,7 @@
   },
   "scripts": {
     "new-version": "lerna version --conventional-commits --yes",
+    "install-deps": "npm install && lerna bootstrap",
     "watch:build": "lerna run watch:build", 
     "start-dev": "lerna run start --scope=root",
     "dev": "concurrently \"npm run watch:build\" \"npm run start-dev\""
