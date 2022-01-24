@@ -2,14 +2,21 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "lerna": "^4.0.0"
   },
   "scripts": {
     "new-version": "lerna version --conventional-commits --yes",
     "install-deps": "npm install && lerna bootstrap",
-    "watch:build": "lerna run watch:build", 
+    "watch:build": "lerna run watch:build",
     "start-dev": "lerna run start --scope=root",
-    "dev": "concurrently \"npm run watch:build\" \"npm run start-dev\""
+    "dev": "concurrently \"npm run watch:build\" \"npm run start-dev\"",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
