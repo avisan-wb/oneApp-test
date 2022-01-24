@@ -12,6 +12,7 @@ export const Child1 = ({moduleState}) => {
         return <div key={u.name}>
           <div>{u.name}</div>
           <div>{u.email}</div>
+          <div>Test to see how the version increases with a change</div>
           <hr /> 
         </div>
       })}
